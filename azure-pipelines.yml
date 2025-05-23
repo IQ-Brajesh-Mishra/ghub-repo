@@ -9,6 +9,6 @@ jobs:
   steps:
   - script: |
       docker pull owasp/zap2docker-stable
-      docker run -t owasp/zap2docker-stable zap-baseline.py -t https://example.com
+      docker run -t owasp/zap2docker-stable zap-baseline.py -t https://scheduler-web.iqctlab.com
     displayName: 'Run OWASP ZAP Baseline Scan'
 
